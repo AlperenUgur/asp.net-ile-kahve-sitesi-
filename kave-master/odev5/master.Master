@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="odev5.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body class="ss">
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="anasayfa" runat="server" Text="Anasayfa" OnClick="Button1_Click" Width="141px" CssClass="button1" PostBackUrl="~/anasayfa.aspx" Height="43px" />
+            <asp:Button ID="demlemeYontem" runat="server" Text="Demleme Yöntemleri" Width="175px" CssClass="button" PostBackUrl="~/demlemeyontemleri.aspx" Height="43px" />
+            <asp:Button ID="kahveCesit" runat="server" Text="Kahve Çeşitleri" Width="200px" CssClass="button" PostBackUrl="~/kahvecesitleri.aspx" Height="43px" />
+            <asp:Button ID="kahveTarifleri" runat="server" Text="Kahve Tarifleri" Width="192px" CssClass="button" PostBackUrl="~/kahveTarifleri.aspx" Height="43px" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <p id="ss">
+            &nbsp;</p>
+    </form>
+</body>
+</html>
